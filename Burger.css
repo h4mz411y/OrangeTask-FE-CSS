@@ -13,17 +13,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: transparent; /* Set background color to transparent */
+    background-color: transparent;
     border-radius: 50%;
     overflow: hidden;
     padding: 20px;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .burger:hover {
+    transform: scale(1.1);
   }
   
   .bun {
     flex: 1;
     background-color: #e0ac69;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
   }
   
   .top {
@@ -41,6 +47,7 @@ body {
     background-color: #5b9956;
     margin-top: 5px;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
   }
   
   .tomato {
@@ -48,6 +55,7 @@ body {
     background-color: #d82424;
     margin-top: 5px;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
   }
   
   .cheese {
@@ -55,6 +63,7 @@ body {
     background-color: #ffc23b;
     margin-top: 5px;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
   }
   
   .patty {
@@ -62,6 +71,19 @@ body {
     background-color: #3c2810;
     margin-top: 5px;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .burger:hover .lettuce {
+    margin-top: 15px; 
+  }
+  
+  .burger:hover .tomato {
+    margin-top: 10px; 
+  }
+  
+  .burger:hover .cheese {
+    margin-top: 15px;
   }
   
   @media (max-width: 600px) {
