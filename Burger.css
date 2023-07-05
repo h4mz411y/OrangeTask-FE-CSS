@@ -8,21 +8,22 @@ body {
   }
   
   .burger {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #b7410e;
-    border-radius: 15px;
+    background-color: transparent; /* Set background color to transparent */
+    border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
   }
   
   .bun {
-    height: 30%;
+    flex: 1;
     background-color: #e0ac69;
-    border-radius: 15px;
+    border-radius: 50%;
   }
   
   .top {
@@ -36,29 +37,38 @@ body {
   }
   
   .lettuce {
-    height: 15%;
+    flex: 0.2;
     background-color: #5b9956;
+    margin-top: 5px;
+    border-radius: 5px;
   }
   
   .tomato {
-    height: 15%;
+    flex: 0.15;
     background-color: #d82424;
+    margin-top: 5px;
+    border-radius: 50%;
   }
   
   .cheese {
-    height: 15%;
+    flex: 0.15;
     background-color: #ffc23b;
+    margin-top: 5px;
+    border-radius: 5px;
   }
   
   .patty {
-    height: 25%;
+    flex: 0.5;
     background-color: #3c2810;
+    margin-top: 5px;
+    border-radius: 5px;
   }
   
   @media (max-width: 600px) {
     .burger {
-      width: 150px;
-      height: 150px;
+      width: 250px;
+      height: 250px;
+      padding: 10px;
     }
   }
   
