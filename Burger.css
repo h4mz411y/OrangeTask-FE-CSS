@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+  }
+  
+  .burger {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #b7410e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bun {
+    height: 30%;
+    background-color: #e0ac69;
+    border-radius: 15px;
+  }
+  
+  .top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .bottom {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .lettuce {
+    height: 15%;
+    background-color: #5b9956;
+  }
+  
+  .tomato {
+    height: 15%;
+    background-color: #d82424;
+  }
+  
+  .cheese {
+    height: 15%;
+    background-color: #ffc23b;
+  }
+  
+  .patty {
+    height: 25%;
+    background-color: #3c2810;
+  }
+  
+  @media (max-width: 600px) {
+    .burger {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
